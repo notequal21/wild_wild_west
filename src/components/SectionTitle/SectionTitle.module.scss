@@ -1,0 +1,20 @@
+.title {
+  color: #fff;
+  text-shadow: 3px 3px 0px #333;
+  font-family: Rye;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  text-shadow: 3px 3px 0px #333, 3px -3px 0px #333, -3px 3px 0px #333,
+    3px 0px 0px #333, 0px 3px 0px #333, -3px 0px 0px #333, 0px -3px 0px #333;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+    line-height: 1.15;
+    text-shadow: 1.9px 1.9px 0px #333, 1.9px -1.9px 0px #333,
+      -1.9px 1.9px 0px #333, 1.9px 0px 0px #333, 0px 1.9px 0px #333,
+      -1.9px 0px 0px #333, 0px -1.9px 0px #333;
+  }
+}

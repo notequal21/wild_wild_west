@@ -1,0 +1,49 @@
+.roadmap {
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 170px 0 200px;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 80px 0;
+  }
+
+  &__title {
+    text-align: center;
+    align-items: center;
+
+    @media (max-width: 991px) {
+      font-size: 30px;
+    }
+
+    svg {
+      margin: 0 16px;
+
+      @media (max-width: 991px) {
+        margin: 0 6px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  &Body {
+    margin: 40px 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+    }
+  }
+
+  &Slider {
+    margin: 22px 0 0;
+    overflow: visible !important;
+
+    &__slide {
+      width: 268px !important ;
+    }
+  }
+}

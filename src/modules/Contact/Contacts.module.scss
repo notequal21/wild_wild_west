@@ -1,0 +1,143 @@
+.contact {
+  position: relative;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 0 320px;
+  overflow: hidden;
+  scroll-margin-top: 100px;
+
+  @media (max-width: 991px) {
+    scroll-margin-top: 50px;
+  }
+
+  @media (max-width: 767px) {
+    background-position: 60% 100%;
+    padding: 70px 0 220px;
+  }
+
+  &__man {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media (max-width: 767px) {
+      width: 213px;
+      bottom: 20px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    align-items: center;
+
+    svg {
+      margin: 0 16px;
+
+      @media (max-width: 850px) {
+        margin: 0 6px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  &__text {
+    margin: 20px auto 0;
+    max-width: 736px;
+    color: #333;
+    text-align: center;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    @media (max-width: 767px) {
+      margin: 26px auto 0;
+      font-size: 14px;
+    }
+  }
+  &Body {
+    position: relative;
+    z-index: 1;
+    margin: 28px auto 0;
+    max-width: 736px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 32px;
+
+    @media (max-width: 767px) {
+      gap: 18px;
+    }
+
+    input {
+      height: 62px;
+      flex: 0 0 calc(50% - 16px);
+
+      @media (max-width: 767px) {
+        flex: 0 0 calc(100%);
+      }
+    }
+
+    textarea {
+      margin: 12px 0 0;
+      width: 100%;
+      height: 110px;
+      flex: 0 0 auto;
+      resize: none;
+      padding: 20px 12px;
+
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+    }
+
+    &__input {
+      border-radius: 11px;
+      border: 1px solid #333;
+      background: #fff;
+      box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      padding: 0 12px;
+
+      font-family: Bahnschrift;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 100%;
+
+      color: #000;
+
+      &::placeholder {
+        color: #333;
+      }
+    }
+
+    &__btn {
+      margin: 35px auto 0;
+
+      & > span {
+        padding: 0 60px;
+      }
+
+      @media (max-width: 767px) {
+        margin: 0 auto;
+        max-width: 420px;
+        width: 100%;
+
+        & > span {
+          width: 100%;
+          justify-content: center;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

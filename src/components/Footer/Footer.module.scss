@@ -1,0 +1,129 @@
+.footer {
+  padding: 160px 0 35px;
+  background-image: url(./assets/bg.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+
+  @media (max-width: 991px) {
+    padding: 50px 0 25px;
+  }
+
+  &__logo {
+    width: 224px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &Links {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    padding: 0 0 35px;
+    border-bottom: 1px solid #fff;
+
+    @media (max-width: 991px) {
+      margin: 12px 0 0;
+      padding: 0 0 18px;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &__item {
+      cursor: pointer;
+      position: relative;
+      color: #fff;
+      font-family: Bahnschrift;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 100%;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.27) -0.16%,
+            rgba(0, 0, 0, 0.27) 45.71%,
+            rgba(0, 0, 0, 0) 46.22%,
+            rgba(0, 0, 0, 0.27) 100%
+          ),
+          #febe63;
+        box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.25);
+        right: 0;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+  }
+  &Bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0 0;
+
+    @media (max-width: 991px) {
+      margin: 14px 0 0;
+      flex-direction: column-reverse;
+    }
+
+    &__cr {
+      color: #fff;
+      text-align: center;
+      font-family: Bahnschrift;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 120%;
+
+      @media (max-width: 991px) {
+        margin: 12px 0 0;
+        font-size: 12px;
+      }
+    }
+    &__logo {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 224px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &__social {
+      display: flex;
+      gap: 10px;
+
+      &Item {
+        width: 32px;
+        height: 32px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

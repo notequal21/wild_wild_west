@@ -1,0 +1,94 @@
+.card {
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 28px 36px 0;
+
+  width: 800px;
+  height: 168px;
+
+  display: flex;
+
+  @media (max-width: 840px) {
+    padding: 10px 16px 0 13px;
+    width: 288px;
+    height: 117px;
+    background-image: url(./assets/bg-mobile.jpg);
+
+    &:nth-child(2) {
+      background-image: url(./assets/bg-mobile-2.jpg);
+      height: 154px;
+    }
+    &:nth-child(3) {
+      background-image: url(./assets/bg-mobile-3.jpg);
+      height: 184px;
+    }
+    &:nth-child(4) {
+      background-image: url(./assets/bg-mobile-4.jpg);
+      height: 140px;
+    }
+  }
+
+  &__num {
+    align-self: center;
+
+    padding: 0 0 28px;
+    color: #fff;
+    text-shadow: 3px 3px 0px #333;
+    font-family: Rye;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    text-shadow: 3px 3px 0px #333, 3px -3px 0px #333, -3px 3px 0px #333,
+      3px 0px 0px #333, 0px 3px 0px #333, -3px 0px 0px #333, 0px -3px 0px #333;
+
+    @media (max-width: 840px) {
+      font-size: 28px;
+      line-height: 1.15;
+      text-shadow: 1.9px 1.9px 0px #333, 1.9px -1.9px 0px #333,
+        -1.9px 1.9px 0px #333, 1.9px 0px 0px #333, 0px 1.9px 0px #333,
+        -1.9px 0px 0px #333, 0px -1.9px 0px #333;
+    }
+  }
+
+  &Content {
+    margin: 0 0 0 36px;
+
+    @media (max-width: 840px) {
+      margin: 0 0 0 16px;
+    }
+
+    &__title {
+      color: #333;
+      font-family: Rye;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+
+      @media (max-width: 840px) {
+        font-size: 14px;
+      }
+    }
+
+    &__text {
+      margin: 10px 0 0;
+
+      color: #333;
+      font-family: Bahnschrift;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+
+      @media (max-width: 840px) {
+        margin: 4px 0 0;
+        font-size: 12px;
+      }
+    }
+  }
+}

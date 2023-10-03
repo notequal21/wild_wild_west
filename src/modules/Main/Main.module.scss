@@ -1,0 +1,125 @@
+.main {
+  padding: 300px 0 300px;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    padding: 60px 0 320px;
+  }
+
+  &Body {
+    position: relative;
+
+    &__img {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+      top: -120px;
+      // bottom: -380px;
+      left: 75px;
+
+      @media (max-width: 767px) {
+        top: auto;
+        bottom: -380px;
+        left: -16px;
+        width: calc(100% + 32px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &__title {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      text-shadow: 3px 3px 0px #333, 3px -3px 0px #333, -3px 3px 0px #333,
+        3px 0px 0px #333, 0px 3px 0px #333, -3px 0px 0px #333, 0px -3px 0px #333;
+      font-family: Rye;
+      font-size: 70px;
+      line-height: 100%;
+      text-transform: uppercase;
+
+      @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 1.15;
+        text-shadow: 1.9px 1.9px 0px #333, 1.9px -1.9px 0px #333,
+          -1.9px 1.9px 0px #333, 1.9px 0px 0px #333, 0px 1.9px 0px #333,
+          -1.9px 0px 0px #333, 0px -1.9px 0px #333;
+      }
+
+      span {
+        color: #fec856;
+      }
+    }
+    &__subtitle {
+      position: relative;
+      z-index: 1;
+      margin: 35px 0 0;
+      color: #4c4544;
+      font-family: Bahnschrift;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 126%;
+
+      @media (max-width: 767px) {
+        margin: 10px 0 0;
+        font-size: 20px;
+      }
+    }
+    &__address {
+      position: relative;
+      z-index: 1;
+      margin: 15px 0 0;
+
+      color: #4c4544;
+      font-family: Bahnschrift;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 126%;
+
+      @media (max-width: 767px) {
+        margin: 6px 0 0;
+        font-size: 12px;
+      }
+
+      span {
+        text-decoration-line: underline;
+      }
+    }
+    &__links {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 12px;
+      margin: 60px 0 0;
+
+      @media (max-width: 767px) {
+        margin: 12px 0 0;
+        gap: 6px;
+      }
+
+      &Item {
+        width: 42px;
+        height: 42px;
+
+        @media (max-width: 767px) {
+          width: 22px;
+          height: 22px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
