@@ -38,7 +38,12 @@ const Header = () => {
               ))}
             </div>
           )}
-          <Button className={style.headerBody__btn}>
+          <Button
+            href={
+              'https://app.uniswap.org/tokens/ethereum/0xBb62dA70E88e4e1214796C515d0d0468b2a74694'
+            }
+            className={style.headerBody__btn}
+          >
             <img src={horse} srcSet={`${horse} 1x, ${horse2x} 2x`} alt='' />
             BUY NOW
           </Button>

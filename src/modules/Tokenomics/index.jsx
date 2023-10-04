@@ -72,7 +72,7 @@ const TokenomicsSection = () => {
             </div>
             <div className={style.tokenomicsCard__tax}>1% Tax On Buy/Sell</div>
             <div className={style.tokenomicsCard__label}>
-              Contract Renounced <br />& Audited by Hacken
+              Contract Renounced
             </div>
 
             <div className={style.tokenomicsCard__person1}>

@@ -64,7 +64,13 @@ const AboutSection = () => {
               So, partner up with us, and let's embark on this wild crypto
               adventure. Yeehaw!
             </div>
-            <Button isBig className={style.aboutContent__btn}>
+            <Button
+              href={
+                'https://app.uniswap.org/tokens/ethereum/0xBb62dA70E88e4e1214796C515d0d0468b2a74694'
+              }
+              isBig
+              className={style.aboutContent__btn}
+            >
               <img src={horse} srcSet={`${horse} 1x, ${horse2x} 2x`} alt='' />
               BUY NOW
             </Button>

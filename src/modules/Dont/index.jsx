@@ -40,7 +40,13 @@ const Dont = () => {
             your claim in the wildest ride the crypto frontier has ever seen.
             Saddle up and invest in $WWW today – the Wild Wild West awaits!
           </div>
-          <Button isBig className={style.dontBody__btn}>
+          <Button
+            href={
+              'https://app.uniswap.org/tokens/ethereum/0xBb62dA70E88e4e1214796C515d0d0468b2a74694'
+            }
+            isBig
+            className={style.dontBody__btn}
+          >
             BUY NOW
           </Button>
         </div>
