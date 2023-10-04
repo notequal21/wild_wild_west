@@ -24,7 +24,7 @@ const teamList = [
     img: img3,
     img2x: img3_2x,
     name: 'mike <br /> dallas',
-    pos: 'programmer',
+    pos: 'designer',
   },
   {
     img: img4,
