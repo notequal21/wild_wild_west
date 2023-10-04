@@ -1,7 +1,7 @@
 const roadmapList = [
   [
     'Token Launch',
-    'Hacken verified <br /> audited contract',
+    'Hacken verified audited contract',
     'CoinGecko/ <br /> Coinmarketcap <br /> Listings',
     'Get $WWW Trending <br /> on Twitter ',
   ],

@@ -47,6 +47,8 @@ const Footer = () => {
                 className={style.footerBottom__socialItem}
                 key={index}
                 href={item.href}
+                target='_blank'
+                rel='noreferrer'
               >
                 <img src={item.icon} alt='' />
               </a>

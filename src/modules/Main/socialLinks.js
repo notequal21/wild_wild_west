@@ -6,23 +6,28 @@ import icon5 from './assets/icon5.svg';
 
 const socialLinks = [
   {
-    icon: icon1,
-    href: '',
-  },
-  {
-    icon: icon2,
-    href: '',
-  },
-  {
-    icon: icon3,
-    href: '',
-  },
-  {
+    // uniswap
     icon: icon4,
     href: '',
   },
   {
+    // twitter
+    icon: icon3,
+    href: 'https://twitter.com/WildWildWestERC',
+  },
+  {
+    // telegram
+    icon: icon1,
+    href: 'https://t.me/+e7ODvfkbD102NzE0',
+  },
+  {
+    // etherscan
     icon: icon5,
+    href: 'https://etherscan.io/token/0xbb62da70e88e4e1214796c515d0d0468b2a74694',
+  },
+  {
+    //
+    icon: icon2,
     href: '',
   },
 ];

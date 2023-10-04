@@ -37,6 +37,8 @@ const MainSection = () => {
             {socialLinks.map((item, index) => (
               <a
                 href={item.href}
+                target='_blank'
+                rel='noreferrer'
                 key={index}
                 className={style.mainBody__linksItem}
               >

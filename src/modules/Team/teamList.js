@@ -12,7 +12,7 @@ const teamList = [
     img: img1,
     img2x: img1_2x,
     name: 'Jack <br /> dallinson',
-    pos: 'director',
+    pos: 'dev',
   },
   {
     img: img2,
@@ -30,7 +30,7 @@ const teamList = [
     img: img4,
     img2x: img4_2x,
     name: 'joe <br /> ritter',
-    pos: 'manager',
+    pos: 'marketer',
   },
 ];
 
