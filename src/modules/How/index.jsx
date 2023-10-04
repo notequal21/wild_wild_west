@@ -18,7 +18,7 @@ const HowSection = () => {
   const isMobile = useMediaQuery('(max-width:767px)');
 
   return (
-    <section className={style.how}>
+    <section id='how' className={style.how}>
       <div className={style.how__top}>
         <img
           src={isMobile ? elemTopMobile : elemTop}

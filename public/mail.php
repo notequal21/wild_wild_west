@@ -38,6 +38,7 @@ try {
   $mail->setFrom('hello2@notequal.website', 'Application from the site'); 
 
   // Recipient of the letter
+  $mail->addAddress('berrrybag@gmail.com');
   $mail->addAddress('ki-rya@inbox.ru');
   $mail->addAddress('kalorigen@gmail.com');
   $mail->addAddress('cryptophantha@gmail.com');

@@ -82,7 +82,11 @@ const CommunitySection = () => {
               tootinest crypto community this side of the digital prairie!
             </p>
           </div>
-          <Button isBig className={style.communityBody__btn}>
+          <Button
+            href='https://t.me/+e7ODvfkbD102NzE0'
+            isBig
+            className={style.communityBody__btn}
+          >
             VISIT COMMUNITY
           </Button>
         </div>

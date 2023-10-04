@@ -12,9 +12,22 @@ import elemBottomMobile from '../About/assets//elem-bottom-mobile.png';
 import elemBottomMobile2x from '../About/assets//elem-bottom-mobile@2x.png';
 import { useMediaQuery } from 'usehooks-ts';
 import shots from './assets/shots.svg';
+import { useEffect } from 'react';
 
 const Faq = () => {
   const isMobile = useMediaQuery('(max-width:767px)');
+
+  useEffect(() => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  }, []);
 
   return (
     <section id='faq' className={style.faq}>

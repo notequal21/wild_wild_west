@@ -8,7 +8,7 @@ const socialLinks = [
   {
     // uniswap
     icon: icon4,
-    href: '',
+    href: 'https://app.uniswap.org/tokens/ethereum/0xBb62dA70E88e4e1214796C515d0d0468b2a74694',
   },
   {
     // twitter

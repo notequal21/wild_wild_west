@@ -40,7 +40,7 @@ const Header = () => {
           )}
           <Button className={style.headerBody__btn}>
             <img src={horse} srcSet={`${horse} 1x, ${horse2x} 2x`} alt='' />
-            how to buy
+            BUY NOW
           </Button>
 
           {isMobile && (

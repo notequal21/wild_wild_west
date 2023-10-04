@@ -71,6 +71,13 @@
     line-height: 130%;
     max-width: 652px;
 
+    a {
+      color: #000;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     @media (max-width: 767px) {
       font-size: 12px;
     }

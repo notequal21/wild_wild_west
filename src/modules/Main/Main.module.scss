@@ -1,8 +1,8 @@
 .main {
-  padding: 220px 0 250px;
+  padding: 220px 0 260px;
   background-image: url(./assets/bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   overflow: hidden;
 
   @media (max-width: 767px) {
@@ -61,7 +61,7 @@
       position: relative;
       z-index: 1;
       margin: 35px 0 0;
-      color: #4c4544;
+      color: #000;
       font-family: Bahnschrift;
       font-size: 30px;
       font-weight: 300;
@@ -77,7 +77,7 @@
       z-index: 1;
       margin: 15px 0 0;
 
-      color: #4c4544;
+      color: #000;
       font-family: Bahnschrift;
       font-size: 20px;
       font-style: normal;

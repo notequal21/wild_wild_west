@@ -132,7 +132,7 @@ const Accordion = ({ faq, index }) => {
       >
         <div className={style.accordion__answer}>
           {answer.map((item, index) => (
-            <p key={index}>{item}</p>
+            <p key={index} dangerouslySetInnerHTML={{ __html: item }}></p>
           ))}
         </div>
       </div>
