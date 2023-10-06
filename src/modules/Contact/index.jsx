@@ -1,55 +1,17 @@
-import { useRef, useState } from 'react';
 import Button from '../../components/Button';
 import SectionTitle from '../../components/SectionTitle';
 import style from './Contacts.module.scss';
 import man from './assets/man.svg';
-import { useForm } from 'react-hook-form';
 
 const Contact = () => {
-  const thisForm = useRef(null);
-  const [isSent, setSent] = useState(false);
-
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-
-    let formData = new FormData(thisForm.current);
-
-    let xhr = new XMLHttpRequest();
-
-    console.log('formData', formData);
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        setSent(true);
-
-        if (xhr.status === 200) {
-          console.log('Mail send');
-        }
-
-        setTimeout(() => {
-          setSent(false);
-        }, 4000);
-      }
-    };
-
-    xhr.open('POST', 'mail.php', true);
-    xhr.send(formData);
-
-    thisForm.current.reset();
-  };
-
   return (
     <section id='contact' className={style.contact}>
+      <div className={style.contact__email}></div>
+
       <div className={style.contact__man}>
         <img src={man} alt='' />
       </div>
-      <div className='container'>
+      <div className={`container ${style.con}`}>
         <SectionTitle className={style.contact__title}>
           <svg
             width='45'
@@ -83,50 +45,13 @@ const Contact = () => {
           returns. It lacks a formal team or a clearly outlined roadmap, making
           it a whimsical asset primarily designed for entertainment purposes.
         </div>
-        <form
-          ref={thisForm}
-          onSubmit={handleSubmit(onSubmit)}
-          className={style.contactBody}
+        <Button
+          href={'mailto:support@wildwildwest.vip'}
+          isBig
+          className={style.contactBody__btn}
         >
-          <input
-            {...register('name', { required: true })}
-            type='text'
-            placeholder='Name'
-            className={`${style.contactBody__input} ${
-              errors.name && style._err
-            }`}
-          />
-          <input
-            {...register('email', {
-              required: true,
-              pattern: {
-                value: /\S+@\S+\.\S+/,
-                message: '',
-              },
-            })}
-            type='text'
-            placeholder='Email'
-            className={`${style.contactBody__input} ${
-              errors.email && style._err
-            }`}
-          />
-          <textarea
-            {...register('message', { required: true })}
-            placeholder='Message'
-            className={`${style.contactBody__input} ${
-              errors.message && style._err
-            }`}
-          ></textarea>
-          <Button isBig className={style.contactBody__btn}>
-            contact me
-          </Button>
-        </form>
-
-        {isSent && (
-          <div className={style.contact__success}>
-            Message sent successfully
-          </div>
-        )}
+          CONTACT ME HERE
+        </Button>
       </div>
     </section>
   );

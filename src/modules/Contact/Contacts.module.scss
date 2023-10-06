@@ -25,6 +25,11 @@
     font-family: Bebas Neue;
   }
 
+  .con {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__man {
     position: absolute;
     bottom: 0;
