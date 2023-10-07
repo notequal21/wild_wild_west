@@ -26,9 +26,9 @@ const socialLinks = [
     href: 'https://etherscan.io/token/0xbb62da70e88e4e1214796c515d0d0468b2a74694',
   },
   {
-    //
+    // dextools
     icon: icon2,
-    href: '',
+    href: 'https://www.dextools.io/app/en/ether/pair-explorer/0x7a3b60c5aa7c6f868ddee438970497b50eabed6e',
   },
 ];
 
